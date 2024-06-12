@@ -2,7 +2,9 @@
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
     naersk.url = "github:nix-community/naersk";
-    rust-overlay.url = "github:oxalica/rust-overlay";
+    rust-overlay = {
+      url = "github:oxalica/rust-overlay";
+    };
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
   };
 
@@ -31,6 +33,7 @@
             }))
         ];
         all_deps = with pkgs; [
+          cargo-watch
           cargo-flamegraph
           cargo-expand
           nixpkgs-fmt

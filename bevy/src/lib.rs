@@ -14,5 +14,5 @@ mod app {
     Entry,
   }
 
-  pub const: &str = "changeme";
+  pub const APP_NAME: &str = "changeme";
 }
