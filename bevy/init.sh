@@ -6,6 +6,8 @@ echo "Setting up git"
 echo "====================================="
 sed -i "s/changeme/${project_name}/g" Cargo.toml
 sed -i "s/changeme/${project_name}/g" flake.nix
+sed -i "s/changeme/${project_name}/g" src/main.rs
+sed -i "s/changeme/${project_name}/g" src/lib.rs
 git init
 git add * .envrc .gitignore
 git reset -- init.sh
