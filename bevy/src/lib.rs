@@ -1,5 +1,7 @@
 pub mod prelude {
   pub use bevy::prelude::*;
+  pub use bevy::palettes::css as css;
+  pub use css::GOLD;
 }
 
 pub mod plugins {
