@@ -15,18 +15,27 @@
           description = "Rust project with cargo2nix";
           path = ./cargo2nix;
         };
-        rust-bevy = {
+
+        bevy-app = {
           description = "Rust and Bevy";
-          path = ./bevy;
+          path = ./bevy/app;
         };
+
+        bevy-plugin = {
+          description = "Bevy Plugin";
+          path = ./bevy/plugin;
+        };
+
         rust-naersk = {
           description = "Rust Naersk";
           path = ./naersk;
         };
+
         rust-naersk-nightly = {
           description = "Rust Naersk Nightly";
           path = ./naersk-nightly;
         };
+
       };
       devShell = {
         x86_64-linux = pkgs.mkShell {
