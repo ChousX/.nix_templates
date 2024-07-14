@@ -1,7 +1,7 @@
 pub use bevy::prelude::*;
 
 pub mod prelude {
-    
+    pub use crate::changemePlugin;
 }
 
 pub struct changemePlugin;
