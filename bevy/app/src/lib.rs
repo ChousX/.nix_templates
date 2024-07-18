@@ -2,6 +2,7 @@ pub mod prelude {
   pub use bevy::prelude::*;
   pub use bevy::color::palettes::css as css;
   pub use css::GOLD;
+  pub use crate::app::APP_NAME;
 }
 
 pub mod plugins {
