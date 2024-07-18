@@ -21,9 +21,9 @@
           path = ./bevy/app;
         };
 
-        bevy-wayland = {
-          description = "Bevy with wayland";
-          path = ./bevy/wayland;
+        bevy-web = {
+          description = "Bevy with web";
+          path = ./bevy/web;
         };
 
         bevy-plugin = {
