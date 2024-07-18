@@ -30,6 +30,12 @@
           #Wayland
           libxkbcommon 
           wayland
+
+          #Web
+          rustToolchain
+          trunk
+          dart-sass
+          wasm-bindgen-cli
         ];
         nativeBuildInputs = with pkgs; [
           pkg-config
