@@ -20,7 +20,7 @@
           udev
           alsa-lib
           vulkan-loader
-
+          vulkaninfo,
 
           #X11
           xorg.libXcursor
