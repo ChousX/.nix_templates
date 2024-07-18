@@ -20,7 +20,6 @@
           udev
           alsa-lib
           vulkan-loader
-          vulkaninfo
 
           #X11
           xorg.libXcursor
@@ -32,7 +31,6 @@
           wayland
 
           #Web
-          rustToolchain
           trunk
           dart-sass
           wasm-bindgen-cli
