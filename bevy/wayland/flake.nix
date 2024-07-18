@@ -67,6 +67,7 @@
         devShell = pkgs.mkShell {
           nativeBuildInputs = all_deps;
           shellHook = ''
+            export WINIT_UNIX_BACKEND=wayland
             export CARGO_MANIFEST_DIR=$(pwd)
             export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:${pkgs.lib.makeLibraryPath all_deps}"
           '';
